@@ -240,7 +240,7 @@ class Cart {
                             <h3>Total: ₹${this.getTotal().toFixed(2)}</h3>
                         </div>
                         <div class="checkout-note">
-                            <p><i class="fas fa-info-circle"></i> This is a demo checkout. In a real application, this would process payment and place the order.</p>
+                            <p><i class="fas fa-info-circle"></i> Please provide your delivery details and confirm your order to complete checkout.</p>
                         </div>
                     </div>
                     <div class="checkout-footer">
@@ -267,14 +267,18 @@ class Cart {
             }
 
             .checkout-modal-overlay {
-                position: absolute;
+                position: fixed;
                 top: 0;
                 left: 0;
                 right: 0;
                 bottom: 0;
                 background: rgba(0, 0, 0, 0.8);
                 backdrop-filter: blur(5px);
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
+
 
             .checkout-modal-content {
                 background: var(--color-card);
