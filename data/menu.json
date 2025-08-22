@@ -1,0 +1,246 @@
+{
+  "categories": [
+    {
+      "id": "appetizers",
+      "name": "Appetizers",
+      "description": "Delicious starters to kick off your meal",
+      "image": "https://pixabay.com/get/gd2a1525364f1e4c894ed29891cecdd1f69ac9c7a5164c5c738604ef24a7aa32a6b9f60d43fae5153b2b1ada2f1ab3ac808d0a94acb149406822ead8dc28c33d3_1280.jpg"
+    },
+    {
+      "id": "mains",
+      "name": "Main Courses",
+      "description": "Masterfully crafted dishes, delivered fresh for the discerning foodie.",
+      "image": "https://pixabay.com/get/g02e0bb7e05facb94cc165922722e172326b97d9ac6b08b0b32c953711d95e65b97661158b7093f53d6a325a4f0139034d649dda62d71d56a2ee7c66a74c1bf9d_1280.jpg"
+    },
+    {
+      "id": "desserts",
+      "name": "Desserts",
+      "description": "Decadent endings to your culinary journey",
+      "image": "https://pixabay.com/get/g1e9500ca8e18ecfab1a7d01ca8ca5bd02487908ac0a3f978105393810ce7f1ebcb3af349c627a64f1aa670d774118fc70bfc7ce5587fac59c4faae622335105f_1280.jpg"
+    },
+    {
+      "id": "beverages",
+      "name": "Beverages",
+      "description": "Refreshing cold brews, crafted to energize your day.",
+      "image": "https://pixabay.com/get/gd1866b8ca7b4766ab3f9550de7006e9e422093a00b1c0badd4ee4ff3a9dc085612b8cb7b924e9b1424676943016635ff7b72fd087e6af2f99effd1685aa1fe91_1280.jpg"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "name": "Crispy Corn Chaat",
+      "description": "Irresistibly spiced crispy corn, crafted for the ultimate snacking indulgence.",
+      "category": "appetizers",
+      "price": 150,
+      "image": "/static/img/crispycornchaat.jpg",
+      "featured": false
+    },
+    {
+      "id": 2,
+      "name": "Potato Lollipop",
+      "description": "Crispy golden potato lollipops, delicately spiced and served with a tangy house-made dip.",
+      "category": "appetizers",
+      "price": 180,
+      "image": "/static/img/potatololipop.jpg",
+      "featured": false
+    },
+    {
+      "id": 3,
+      "name": "Paneer Seekh Kabab",
+      "description": "Succulent paneer seekh kebabs, infused with aromatic spices and char-grilled to perfection.",
+      "category": "appetizers",
+      "price": 200,
+      "image": "/static/img/paneerseekhkabab.jpg",
+      "featured": false
+    },
+    {
+      "id": 4,
+      "name": "Chicken Keema Kabab",
+      "description": "Flavorful chicken keema, slow-cooked with a spices for a rich and hearty indulgence.",
+      "category": "appetizers",
+      "price": 320,
+      "image": "/static/img/chickenkeemakabab.jpg",
+      "featured": true
+    },
+    {
+      "id": 5,
+      "name": "Kozhukattai Prawn",
+      "description": "Handcrafted prawn kozhukattai, filled with spiced prawn goodness and steamed to perfection.",
+      "category": "appetizers",
+      "price": 380,
+      "image": "/static/img/kozhukattaiprawn.jpg",
+      "featured": false
+    },
+    {
+      "id": 6,
+      "name": "Fish Croquettes",
+      "description": "Golden-fried fish croquettes, delicately seasoned and served with a zesty house-made dip.",
+      "category": "appetizers",
+      "price": 250,
+      "image": "/static/img/fishcroquettes.jpg",
+      "featured": false
+    },
+    {
+      "id": 7,
+      "name": "Veg Dum Biryani",
+      "description": "Fragrant basmati rice slow-cooked with garden-fresh vegetables, aromatic spices, and saffron, sealed to perfection in the traditional dum style.",
+      "category": "mains",
+      "price": 210,
+      "image": "/static/img/vegbiryani.jpg",
+      "featured": true
+    },
+    {
+      "id": 8,
+      "name": "Mushroom Rice",
+      "description": "Fragrant basmati rice tossed with earthy mushrooms, herbs, and subtle spices that perfectly balances.",
+      "category": "mains",
+      "price": 280,
+      "image": "/static/img/mushroomrice.jpg",
+      "featured": false
+    },
+    {
+      "id": 9,
+      "name": "Soya Fried Rice",
+      "description": "Wok-tossed rice with nutritious soya chunks, fresh vegetables, and aromatic seasonings for a wholesome indulgence.",
+      "category": "mains",
+      "price": 250,
+      "image": "/static/img/soyafriedrice.jpg",
+      "featured": false
+    },
+    {
+      "id": 10,
+      "name": "Chicken Dum Biryani",
+      "description": "Fragrant basmati rice slow-cooked with tender chicken, aromatic spices, and saffron, sealed to perfection in the traditional dum style.",
+      "category": "mains",
+      "price": 400,
+      "image": "/static/img/chickendumbiryani.jpg",
+      "featured": false
+    },
+    {
+      "id": 11,
+      "name": "Mutton Dum Biryani",
+      "description": "Fragrant basmati rice slow-cooked with succulent mutton, aromatic spices, and saffron, sealed to perfection in the traditional dum style.",
+      "category": "mains",
+      "price": 680,
+      "image": "/static/img/muttondumbiryani.jpg",
+      "featured": true
+    },
+    {
+      "id": 12,
+      "name": "Egg Biryani",
+      "description": "Fragrant basmati rice layered with spiced boiled eggs, infused with saffron and slow-cooked to perfection in the traditional dum style.",
+      "category": "mains",
+      "price": 310,
+      "image": "/static/img/eggbiryani.jpg",
+      "featured": false
+    },
+    {
+      "id": 13,
+      "name": "Tiramisu",
+      "description": "Classic Italian dessert with espresso-soaked layers, creamy mascarpone, and a dusting of cocoa.",
+      "category": "desserts",
+      "price": 350,
+      "image": "/static/img/tiramisu.jpg",
+      "featured": true
+    },
+    {
+      "id": 14,
+      "name": "Macarons",
+      "description": "Exquisite French macarons, crafted with almond meringue shells and filled with silky, flavorful ganache and creams, offering a perfect balance.",
+      "category": "desserts",
+      "price": 280,
+      "image": "/static/img/macarons.jpg",
+      "featured": false
+    },
+    {
+      "id": 15,
+      "name": "Baklava",
+      "description": "Layers of flaky pastry filled with nuts and sweetened with golden honey syrup, creating a indulgence of rich flavors and delicate crunch.",
+      "category": "desserts",
+      "price": 370,
+      "image": "/static/img/baklava.jpg",
+      "featured": false
+    },
+    {
+      "id": 16,
+      "name": "Cheesecake",
+      "description": "Classic vanilla, lavender honey, and espresso crème brûlée with seasonal berries",
+      "category": "desserts",
+      "price": 360,
+      "image": "/static/img/chesecake.jpeg",
+      "featured": false
+    },
+    {
+      "id": 17,
+      "name": "Gulab Jamun",
+      "description": "Soft, golden dumplings soaked in fragrant rose-infused syrup, offering a melt-in-the-mouth.",
+      "category": "desserts",
+      "price": 290,
+      "image": "/static/img/gulabjamun.jpg",
+      "featured": true
+    },
+    {
+      "id": 18,
+      "name": "Mochi",
+      "description": "Delicate Japanese rice cakes with a soft, chewy texture, filled with luscious sweet centers.",
+      "category": "desserts",
+      "price": 310,
+      "image": "/static/img/mochi.jpg",
+      "featured": false
+    },
+    {
+      "id": 19,
+      "name": "Mocha Frappe",
+      "description": "A chilled blend of rich espresso, velvety chocolate, and creamy milk, topped with whipped cream for the perfect indulgent sip.",
+      "category": "beverages",
+      "price": 320,
+      "image": "/static/img/mochafrappe.jpg",
+      "featured": true
+    },
+    {
+      "id": 20,
+      "name": "Iced Caramel",
+      "description": "Smooth espresso poured over ice, swirled with creamy milk and golden caramel for a refreshing, sweet indulgence.",
+      "category": "beverages",
+      "price": 270,
+      "image": "/static/img/icedcaramel.jpg",
+      "featured": false
+    },
+    {
+      "id": 21,
+      "name": "Coconut Cold",
+      "description": "Chilled cold brew blended with creamy coconut, delivering a tropical twist to your coffee experience.",
+      "category": "beverages",
+      "price": 300,
+      "image": "/static/img/coconutcold.jpg",
+      "featured": false
+    },
+    {
+      "id": 22,
+      "name": "Coffee Lemonade",
+      "description": "A bold fusion of rich cold brew and zesty lemonade, creating a refreshing balance of citrus and coffee.",
+      "category": "beverages",
+      "price": 250,
+      "image": "/static/img/coffeelemonade.jpg",
+      "featured": false
+    },
+    {
+      "id": 23,
+      "name": "longisland",
+      "description": "A timeless classic cocktail blending vodka, rum, gin, tequila, and triple sec, balanced with a splash of cola and citrus.",
+      "category": "beverages",
+      "price": 230,
+      "image": "/static/img/longisland.jpg",
+      "featured": false
+    },
+    {
+      "id": 24,
+      "name": "Mint Iced",
+      "description": "Chilled coffee infused with refreshing mint, perfectly balanced for a cool and energizing indulgence.",
+      "category": "beverages",
+      "price": 250,
+      "image": "/static/img/minticed.jpg",
+      "featured": false
+    }
+  ]
+}
