@@ -4,25 +4,25 @@
       "id": "appetizers",
       "name": "Appetizers",
       "description": "Delicious starters to kick off your meal",
-      "image": "https://pixabay.com/get/gd2a1525364f1e4c894ed29891cecdd1f69ac9c7a5164c5c738604ef24a7aa32a6b9f60d43fae5153b2b1ada2f1ab3ac808d0a94acb149406822ead8dc28c33d3_1280.jpg"
+      "image": "/static/img/appetizers.jpg"
     },
     {
       "id": "mains",
       "name": "Main Courses",
       "description": "Masterfully crafted dishes, delivered fresh for the discerning foodie.",
-      "image": "https://pixabay.com/get/g02e0bb7e05facb94cc165922722e172326b97d9ac6b08b0b32c953711d95e65b97661158b7093f53d6a325a4f0139034d649dda62d71d56a2ee7c66a74c1bf9d_1280.jpg"
+      "image": "/static/img/mains.jpg"
     },
     {
       "id": "desserts",
       "name": "Desserts",
       "description": "Decadent endings to your culinary journey",
-      "image": "https://pixabay.com/get/g1e9500ca8e18ecfab1a7d01ca8ca5bd02487908ac0a3f978105393810ce7f1ebcb3af349c627a64f1aa670d774118fc70bfc7ce5587fac59c4faae622335105f_1280.jpg"
+      "image": "/static/img/desserts.jpg"
     },
     {
       "id": "beverages",
       "name": "Beverages",
       "description": "Refreshing cold brews, crafted to energize your day.",
-      "image": "https://pixabay.com/get/gd1866b8ca7b4766ab3f9550de7006e9e422093a00b1c0badd4ee4ff3a9dc085612b8cb7b924e9b1424676943016635ff7b72fd087e6af2f99effd1685aa1fe91_1280.jpg"
+      "image": "/static/img/beverages.jpg"
     }
   ],
   "items": [

@@ -84,7 +84,7 @@ function populateFeaturedItems(items) {
                         <div>
                             <h3 class="menu-item-title">${item.name}</h3>
                         </div>
-                        <div class="menu-item-price">$${item.price}</div>
+                        <div class="menu-item-price">₹${item.price}</div>
                     </div>
                     <p class="menu-item-description">${item.description}</p>
                     <button class="add-to-cart-btn" onclick="addToCart(${item.id})">
