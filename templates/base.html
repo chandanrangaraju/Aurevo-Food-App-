@@ -25,6 +25,20 @@
     {% block head %}{% endblock %}
 </head>
 <body>
+    {% if request.endpoint in ['login', 'signup'] %}
+      <!-- Only brand name for login/signup -->
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top luxury-navbar" data-aos="fade-down">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <span class="brand-text">Aurévo</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+      </nav>
+    {% else %}
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top luxury-navbar" data-aos="fade-down">
         <div class="container">
@@ -69,6 +83,7 @@
             </div>
         </div>
     </nav>
+    {% endif %}
 
     <!-- Main Content -->
     <main>

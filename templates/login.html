@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Login - Aurévo{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-center align-items-center" style="height: 90vh; background: #000;">
+  <div class="card shadow-lg p-5" style="max-width: 400px; width: 100%; border-radius: 20px; background-color: #111; border: 1px solid #bfa14a;">
+    <h3 class="text-center mb-4" style="color: #bfa14a;">Login</h3>
+    {% if error %}
+      <div class="alert alert-danger">{{ error }}</div>
+    {% endif %}
+    <form method="POST" action="{{ url_for('login') }}">
+      <div class="mb-3">
+        <label class="form-label text-light">Username</label>
+        <input type="text" class="form-control bg-dark text-light border-0" name="username" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label text-light">Password</label>
+        <input type="password" class="form-control bg-dark text-light border-0" name="password" required>
+      </div>
+      <button type="submit" class="btn w-100" style="background-color: #bfa14a; color: #000; font-weight: bold;">Login</button>
+    </form>
+    <p class="text-center mt-3 text-light">
+      Don’t have an account? <a href="{{ url_for('signup') }}" style="color: #bfa14a;">Sign Up</a>
+    </p>
+  </div>
+</div>
+{% endblock %}
