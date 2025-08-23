@@ -236,7 +236,7 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     justify-content: center;
     background: linear-gradient(135deg, rgba(13, 13, 13, 0.8), rgba(26, 26, 26, 0.9)),
-                url('https://pixabay.com/get/g0b68d1192ef0ab40b410ee64c35e5d83b7813dcce7019b349f6d981407d3e8527e7f040b71f9485cd9ee692ba398c6f3b737194181c6b87cad46992b47ec9150_1280.jpg');
+                url('/static/img/herosection.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
