@@ -121,5 +121,12 @@ def api_search():
     
     return jsonify(results)
 
+@app.route("/payment")
+def payment():
+    if "user_id" not in session:
+        return redirect(url_for("login"))
+    return render_template("payment.html")
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
+

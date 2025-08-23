@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% block title %}Payment - Aurévo{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-center align-items-center" style="min-height:90vh; background:#000;">
+  <div class="card shadow-lg p-5" 
+       style="max-width: 500px; width:100%; border-radius: 20px; background-color: #111; border: 1px solid #bfa14a;">
+    
+    <!-- Header -->
+    <h2 class="text-center mb-4" style="color:#bfa14a; font-weight:bold;">Complete Your Payment</h2>
+
+    <!-- Payment Form -->
+    <form>
+      <!-- Method -->
+      <div class="mb-3">
+        <label class="form-label" style="color:#bfa14a; font-weight:500;">Choose Payment Method</label>
+        <select class="form-control bg-dark text-light border-0" id="paymentMethod" required>
+          <option value="cod">Cash on Delivery</option>
+          <option value="upi">UPI</option>
+          <option value="card">Credit/Debit Card</option>
+        </select>
+      </div>
+
+      <!-- UPI Section -->
+      <div id="upiSection" class="text-center mt-3" style="display:none;">
+        <p class="text-light">Scan & Pay via UPI</p>
+        <img src="{{ url_for('static', filename='img/qrcode.png') }}" 
+             alt="UPI QR" 
+             style="max-width:220px; border:3px solid #bfa14a; border-radius:12px; padding:5px;">
+      </div>
+
+      <!-- Card Section -->
+      <div id="cardSection" style="display:none;">
+        <div class="mb-3">
+          <label class="form-label text-light">Card Number</label>
+          <input type="text" class="form-control bg-dark text-light border-0" placeholder="1234 5678 9012 3456">
+        </div>
+        <div class="d-flex gap-2">
+          <div class="mb-3 flex-fill">
+            <label class="form-label text-light">Expiry</label>
+            <input type="text" class="form-control bg-dark text-light border-0" placeholder="MM/YY">
+          </div>
+          <div class="mb-3 flex-fill">
+            <label class="form-label text-light">CVV</label>
+            <input type="password" class="form-control bg-dark text-light border-0" placeholder="***">
+          </div>
+        </div>
+      </div>
+
+      <!-- COD Note -->
+      <div id="codSection" class="mt-3 text-light" style="display:none;">
+        <p>You can pay in cash when your food is delivered.</p>
+      </div>
+
+      <!-- Confirm -->
+      <button type="submit" 
+              class="btn w-100 mt-4" 
+              style="background-color:#bfa14a; color:#000; font-weight:bold;">
+        Confirm Payment
+      </button>
+    </form>
+  </div>
+</div>
+
+<script>
+  const methodSelect = document.getElementById('paymentMethod');
+  const upiSection = document.getElementById('upiSection');
+  const cardSection = document.getElementById('cardSection');
+  const codSection = document.getElementById('codSection');
+
+  methodSelect.addEventListener('change', function() {
+    upiSection.style.display = this.value === 'upi' ? 'block' : 'none';
+    cardSection.style.display = this.value === 'card' ? 'block' : 'none';
+    codSection.style.display = this.value === 'cod' ? 'block' : 'none';
+  });
+</script>
+{% endblock %}

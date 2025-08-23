@@ -430,11 +430,11 @@ class Cart {
             }
         });
 
-        placeOrderBtn.addEventListener('click', () => {
-            this.placeOrder();
-            document.body.removeChild(modal);
-            document.head.removeChild(styleSheet);
-        });
+     placeOrderBtn.onclick = (e) => {
+    e.preventDefault();
+    window.location.assign("/payment");
+};
+
     }
 
     placeOrder() {
