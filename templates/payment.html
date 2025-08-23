@@ -73,5 +73,53 @@
     cardSection.style.display = this.value === 'card' ? 'block' : 'none';
     codSection.style.display = this.value === 'cod' ? 'block' : 'none';
   });
+
+  // ✅ Luxury Toast + Clear Cart + Redirect
+  document.querySelector("form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    // Clear the cart
+    if (window.cart) {
+      cart.clear();
+    }
+
+    // Create luxury toast with golden checkmark
+    const toast = document.createElement("div");
+    toast.innerHTML = `
+      <div style="display:flex; align-items:center; gap:10px;">
+        <span style="font-size:1.4rem; color:#bfa14a;">✔</span>
+        <span>Payment Successful! Redirecting to home...</span>
+      </div>
+    `;
+    Object.assign(toast.style, {
+      position: "fixed",
+      top: "20px",
+      right: "20px",
+      background: "#111",
+      color: "#bfa14a",
+      padding: "15px 25px",
+      borderRadius: "12px",
+      border: "2px solid #bfa14a",
+      boxShadow: "0 0 20px rgba(191,161,74,0.6)",
+      fontWeight: "bold",
+      fontSize: "1rem",
+      zIndex: "9999",
+      animation: "fadeIn 0.5s ease-out"
+    });
+    document.body.appendChild(toast);
+
+    // Fade out after 2s
+    setTimeout(() => {
+      toast.style.transition = "opacity 0.5s";
+      toast.style.opacity = "0";
+    }, 1500);
+
+    // Redirect after 2s
+    setTimeout(() => {
+      toast.remove();
+      window.location.href = "/home";
+    }, 2000);
+  });
 </script>
+
 {% endblock %}
